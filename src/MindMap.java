@@ -1,5 +1,5 @@
 import java.awt.*;
-import static java.awt.event.KeyEvent.*;
+
 public class MindMap {
     static ListOfCircles circles = new ListOfCircles();
     static ListOfLines lines = new ListOfLines();
@@ -19,6 +19,7 @@ public class MindMap {
         }
     }
 
+    // Draws color palette and graphics options in interface
     private static void draw(){
         StdDraw.enableDoubleBuffering();
         StdDraw.clear();
@@ -50,6 +51,7 @@ public class MindMap {
         StdDraw.show();
     }
 
+    // Lets user set pen color and add graphics at mouse click location
     private static void handleMouseClick() {
         StdDraw.clear();
         draw();
